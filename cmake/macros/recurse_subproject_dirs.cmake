@@ -1,5 +1,3 @@
-# Public domain script licensed under terms of "unlicense" (orignal repo: https://github.com/michpolicht/cmake_macros.git).
-
 macro(recurse_subproject_dirs RESULT SCAN_DIR)
     # Cannot use ARGN directly with list() command, so copy it to a variable first.
     set (EXTRA_ARGS ${ARGN})
@@ -19,3 +17,8 @@ macro(recurse_subproject_dirs RESULT SCAN_DIR)
   endforeach()
   set(${RESULT} ${dirlist})
 endmacro()
+
+# Public domain script licensed under terms of "unlicense"
+# https://github.com/michpolicht/cmake_macros.git
+# https://github.com/michpolicht/cmt-playground
+
